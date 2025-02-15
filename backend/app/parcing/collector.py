@@ -5,7 +5,7 @@ from backend.app.utils.config import settings
 import os
 import json
 from datetime import datetime
-from backend.app.parcing.checker import TokenManager
+from backend.app.parcing.processor import TokenManager
 
 
 
@@ -58,12 +58,12 @@ class DataCollector:
                 # Ждем 20 секунд перед следующим сохранением
                 await asyncio.sleep(20)
 
-# # Определяем эндпоинты для сбора данных
-# endpoints = ["/token-profiles/latest/v1", "/token-boosts/latest/v1"]
+# Определяем эндпоинты для сбора данных
+endpoints = ["/token-profiles/latest/v1", "/token-boosts/latest/v1"]
 
-# # Создаем экземпляр сборщика данных
-# collector = DataCollector(endpoints=endpoints)
+# Создаем экземпляр сборщика данных
+collector = DataCollector(endpoints=endpoints)
 
-# # Запускаем сбор данных
-# asyncio.run(collector.data_collector())
+# Запускаем сбор данных
+asyncio.run(collector.data_collector())
 
