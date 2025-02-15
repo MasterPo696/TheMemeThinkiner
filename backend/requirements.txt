@@ -5,3 +5,7 @@ aiogram
 pydantic-settings
 python-dotenv
 requests
+solana
+websockets
+aiofiles
+dotenv
