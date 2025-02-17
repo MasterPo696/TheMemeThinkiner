@@ -5,22 +5,24 @@ import aiohttp
 import logging
 # from utils.config import settings
 import aiofiles
-
+from utils.config import settings
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class WhaleTracker():
-    def __init__(self, address, balance=1000):
-        self.address = address
-        self.balance = balance
+    def __init__(self):
+        self.helius_api_key = settings.HELIUS_API_KEY
+        self.helius_url = settings.HELIUS_URL
+        self.min_balance_usd = settings.MIN_WHALE_BALANCE_USD  # e.g., 5000
 
-    async def get_token_holders(self, token_mint_address, api_key):
-        url = "https://mainnet.helius-rpc.com/?api-key=" + api_key
+    async def get_token_holders(self, token_mint_address):
+        url = f"{self.helius_url}?api-key={self.helius_api_key}"
         headers = {
             "Content-Type": "application/json",
+            "Authorization": f"Bearer {self.helius_api_key}"  # Добавляем заголовок авторизации
         }
-        
+
         all_owners = set()
         page = 1
         batch_size = 1000  # Maximum allowed by API
@@ -59,11 +61,14 @@ class WhaleTracker():
         
         return all_owners if all_owners else None
 
-    async def get_wallet_balance(self, wallet_address, api_key):
-        url = "https://mainnet.helius-rpc.com/?api-key=" + api_key
+    async def get_wallet_balance(self, wallet_address):
+        url = f"{self.helius_url}?api-key={self.helius_api_key}"
+
         headers = {
             "Content-Type": "application/json",
+            "Authorization": f"Bearer {self.helius_api_key}"  # Добавляем заголовок авторизации
         }
+        
         params = {
             "jsonrpc": "2.0",
             "id": "helius-test",
@@ -129,45 +134,34 @@ class WhaleTracker():
         logger.info(f"- Total wealthy holders found: {len(wealthy_holders)}")
         
         return wealthy_holders
-
-token_mint_address = "ExZS1zbG7qopJvA87efQDysHrnJxyjzt8FgVyiLijZwM"
-
-HELIUS_API_KEY="29291e23-0902-4433-a6a7-2f3e32495ee7" 
-tracker = WhaleTracker(token_mint_address, HELIUS_API_KEY)
-
-async def main():
-    token_mint_address = "ExZS1zbG7qopJvA87efQDysHrnJxyjzt8FgVyiLijZwM"
-    api_key = "29291e23-0902-4433-a6a7-2f3e32495ee7"  # Replace with your API key
     
-    logger.info("Starting token holder analysis...")
-    holders = await tracker.get_token_holders(token_mint_address, api_key)
-    
-    if holders:
-        wealthy_holders = await tracker.process_holders_in_batches(holders, api_key)
-        logger.info(f"Analysis complete. Found {len(wealthy_holders)} wealthy holders")
-        logger.info(f"Summary of wealthy holders: {[h[:8]+'...' for h in wealthy_holders]}")
+    async def analyze_token(self, token_mint_address):
+        """Main method to analyze a single token"""
+        logger.info(f"Starting whale analysis for token {token_mint_address}")
+        holders = await self.get_token_holders(token_mint_address)
         
-        # Prepare data to save
-        from datetime import datetime
-        data = {
-            "timestamp": datetime.now().isoformat(),
-            "token_mint": token_mint_address,
-            "total_holders": len(holders),
-            "wealthy_holders": wealthy_holders,
-            "wealthy_holders_count": len(wealthy_holders)
-        }
+        if holders:
+            wealthy_holders = await self.process_holders_in_batches(holders, self.helius_api_key)
+            
+            # Prepare data to save
+            from datetime import datetime
+            data = {
+                "timestamp": datetime.now().isoformat(),
+                "token_mint": token_mint_address,
+                "total_holders": len(holders),
+                "wealthy_holders": wealthy_holders,
+                "wealthy_holders_count": len(wealthy_holders)
+            }
+            
+            # Generate filename with current datetime
+            filename = f"whales_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+            filepath = f"{settings.WHALE_DATA_PATH}/{filename}"
+            
+            async with aiofiles.open(filepath, 'w') as f:
+                await f.write(json.dumps(data, indent=4))
+            logger.info(f"Whale data saved to {filepath}")
+            return wealthy_holders
         
-        # Generate filename with current datetime
-        filename = f"data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-        filepath = "/Users/masterpo/Desktop/TheThinker/backend/data/whales/" + filename
-        
-        # Save to JSON file using aiofiles
-       
-        async with aiofiles.open(filepath, 'w') as f:
-            await f.write(json.dumps(data, indent=4))
-        logger.info(f"Data saved to {filepath}")
-    else:
         logger.error("No holders found to analyze")
+        return None
 
-if __name__ == "__main__":
-    asyncio.run(main())

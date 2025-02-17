@@ -5,7 +5,8 @@ import aiohttp
 import aiofiles
 from datetime import datetime
 from glob import glob
-
+from parcing.whales import WhaleTracker
+from utils.config import settings
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 class TokenManager:
@@ -15,6 +16,7 @@ class TokenManager:
         self.raw_data_path = "/Users/masterpo/Desktop/TheThinker/backend/data/raw"
         self.clean_data_path = "/Users/masterpo/Desktop/TheThinker/backend/data/clean"
         self.pumped_data_path = "/Users/masterpo/Desktop/TheThinker/backend/data/pumped"
+        self.whale_tracker = WhaleTracker()  # Add WhaleTracker instance
         logging.info(f"TokenManager initialized with data_file={data_file}, base_url={base_url}")
 
     async def save_data(self, data):
@@ -80,7 +82,7 @@ class TokenManager:
         raw_files = glob(os.path.join(self.raw_data_path, 'data_*.json'))
         if not raw_files:
             logging.error("No raw data files found")
-            return
+            return None
 
         latest_file = max(raw_files)
         logging.info(f"Processing latest file: {latest_file}")
@@ -115,15 +117,34 @@ class TokenManager:
 
             # Filter and save pumped tokens
             pumped_tokens = self.filter_pumped_tokens(enriched_data)
-            print(len(pumped_tokens))
             if pumped_tokens:
                 os.makedirs('backend/data/pumped', exist_ok=True)
+                timestamp = latest_file.split('data_')[1].split('.json')[0]
                 pumped_filename = f'backend/data/pumped/data_{timestamp}.json'
                 logging.info(f"Saving {len(pumped_tokens)} pumped tokens to {pumped_filename}")
+                
+                # Save pumped tokens
                 async with aiofiles.open(pumped_filename, 'w') as f:
                     await f.write(json.dumps(pumped_tokens, indent=4))
 
-            logging.info(f"Successfully saved enriched data for {len(enriched_data)} tokens to {clean_filename}")
+                # Track whales for each pumped token
+                whale_results = []
+                for token in pumped_tokens:
+                    token_address = token.get('contract')
+                    if token_address:
+                        logging.info(f"Analyzing whales for token: {token_address}")
+                        wealthy_holders = await self.whale_tracker.analyze_token(token_address)
+                        if wealthy_holders:
+                            whale_results.append({
+                                'token': token_address,
+                                'wealthy_holders': wealthy_holders
+                            })
+
+                return pumped_tokens  # Return pumped tokens for further processing
+
+            logging.info(f"Successfully processed data for {len(enriched_data)} tokens")
+            return None
 
         except Exception as e:
             logging.error(f"Error processing raw data: {str(e)}")
+            return None

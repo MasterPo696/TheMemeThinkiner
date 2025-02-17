@@ -36,6 +36,21 @@ class WhaleSubscription:
         except Exception as e:
             logger.error(f"Error loading whale data: {e}")
             return []
+        
+    
+    async def add_addresses(self, new_addresses):
+        """Add new whale addresses to monitoring"""
+        if not new_addresses:
+            return
+            
+        # Add new addresses to the existing set
+        self.wealthy_holders.extend(new_addresses)
+        
+        # Remove duplicates
+        self.wealthy_holders = list(set(self.wealthy_holders))
+        
+        logger.info(f"Added {len(new_addresses)} new addresses to whale monitoring. "
+                   f"Total addresses monitored: {len(self.wealthy_holders)}")
 
     async def subscribe_to_transactions(self):
         while True:
