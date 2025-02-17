@@ -1,97 +1,173 @@
+import requests
 import json
-
-
-import os
-from glob import glob
-from datetime import datetime
+import asyncio
+import aiohttp
 import logging
+# from utils.config import settings
+import aiofiles
 
-class WhaleTracker:
-    def __init__(self):
-        self.clean_data_dir = 'data/clean'
-        
-    def get_historical_files(self):
-        """Get list of clean data files sorted by timestamp"""
-        files = glob(os.path.join(self.clean_data_dir, 'data_*.json'))
-        return sorted(files)
+# Set up logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
-    def analyze_whale_activity(self, threshold_usd=10000):
-        """
-        Analyze whale activity by looking at large purchases before price increases
-        
-        Args:
-            threshold_usd: Minimum USD value to consider as whale activity
-        """
-        files = self.get_historical_files()
-        if not files:
-            logging.error("No clean data files found")
-            return []
+class WhaleTracker():
+    def __init__(self, address, balance=1000):
+        self.address = address
+        self.balance = balance
 
-        whale_activities = []
+    async def get_token_holders(self, token_mint_address, api_key):
+        url = "https://mainnet.helius-rpc.com/?api-key=" + api_key
+        headers = {
+            "Content-Type": "application/json",
+        }
         
-        for i in range(len(files)-1):
-            # Load consecutive files to compare
-            with open(files[i], 'r') as f1, open(files[i+1], 'r') as f2:
-                data1 = json.load(f1)
-                data2 = json.load(f2)
-                
-                # Get timestamp from filename
-                timestamp = files[i].split('data_')[1].split('.json')[0]
-                
-                # Compare each token's data
-                for token1, token2 in zip(data1, data2):
-                    # Calculate volume in USD
-                    volume_usd = float(token1['volume']['h1']) * float(token1['current_price']['usd'])
-                    
-                    # Check if there were large buys (volume > threshold)
-                    if volume_usd > threshold_usd:
-                        # Calculate price increase
-                        price1 = float(token1['current_price']['usd'])
-                        price2 = float(token2['current_price']['usd'])
-                        price_change = ((price2 - price1) / price1) * 100
-                        
-                        # If price increased significantly after large buys
-                        if price_change > 10:  # 10% threshold
-                            whale_activity = {
-                                'timestamp': timestamp,
-                                'token_address': token1['token_address'],
-                                'network': token1['network'],
-                                'volume_usd': volume_usd,
-                                'buy_price': price1,
-                                'current_price': price2,
-                                'price_increase': price_change,
-                                'transaction_count': token1['transactions']['h1']['buys']
-                            }
-                            whale_activities.append(whale_activity)
+        all_owners = set()
+        page = 1
+        batch_size = 1000  # Maximum allowed by API
         
-        return whale_activities
-
-    def get_current_whale_holdings(self):
-        """Get current holdings of identified whale addresses"""
-        files = self.get_historical_files()
-        if not files:
-            return []
-            
-        # Get most recent file
-        latest_file = files[-1]
-        with open(latest_file, 'r') as f:
-            current_data = json.load(f)
-            
-        whale_holdings = []
-        for token in current_data:
-            # Look at large holders based on transaction volume
-            volume_usd = float(token['volume']['h24']) * float(token['current_price']['usd'])
-            if volume_usd > 10000:  # Threshold for whale activity
-                holding = {
-                    'token_address': token['token_address'],
-                    'network': token['network'],
-                    'holding_value_usd': volume_usd,
-                    'current_price': token['current_price']['usd'],
-                    'market_cap': token['market_cap'],
-                    'liquidity': token['liquidity']['usd']
+        while len(all_owners) < 10000:
+            params = {
+                "jsonrpc": "2.0",
+                "method": "getTokenAccounts",
+                "id": "helius-test",
+                "params": {
+                    "mint": token_mint_address,
+                    "limit": batch_size,
+                    "page": page,
                 }
-                whale_holdings.append(holding)
+            }
+            
+            async with aiohttp.ClientSession() as session:
+                async with session.post(url, headers=headers, json=params) as response:
+                    if response.status == 200:
+                        data = await response.json()
+                        if data.get("result") and data["result"]["token_accounts"]:
+                            new_owners = {account["owner"] for account in data["result"]["token_accounts"]}
+                            all_owners.update(new_owners)
+                            logger.info(f"Page {page}: Found {len(new_owners)} token holders. Total: {len(all_owners)}")
+                            page += 1
+                            if len(new_owners) < batch_size:  # No more holders to fetch
+                                break
+                        else:
+                            logger.warning(f"No token accounts found on page {page}")
+                            break
+                    else:
+                        logger.error(f"Error: Failed to fetch data with status code {response.status}")
+                        break
+                    
+                    await asyncio.sleep(0.1)  # Rate limiting
+        
+        return all_owners if all_owners else None
+
+    async def get_wallet_balance(self, wallet_address, api_key):
+        url = "https://mainnet.helius-rpc.com/?api-key=" + api_key
+        headers = {
+            "Content-Type": "application/json",
+        }
+        params = {
+            "jsonrpc": "2.0",
+            "id": "helius-test",
+            "method": "getBalance",
+            "params": [wallet_address]
+        }
+        
+        async with aiohttp.ClientSession() as session:
+            async with session.post(url, headers=headers, json=params) as response:
+                if response.status == 200:
+                    data = await response.json()
+                    if "result" in data:
+                        balance_in_sol = data["result"]["value"] / 1e9
+                        sol_price_usd = 60  # Example fixed price
+                        balance_usd = balance_in_sol * sol_price_usd
+                        return balance_usd
+                logger.warning(f"Failed to get balance for wallet {wallet_address[:8]}...")
+                return 0
+
+    async def process_holders_in_batches(self, holders, api_key, batch_size=50):
+        wealthy_holders = []
+        holders_list = list(holders)
+        total_batches = (len(holders_list) + batch_size - 1) // batch_size
+        
+        logger.info(f"Starting to process {len(holders_list)} holders in {total_batches} batches")
+        
+        async with aiohttp.ClientSession() as session:
+            for i in range(0, len(holders_list), batch_size):
+                batch = holders_list[i:i + batch_size]
+                current_batch = i//batch_size + 1
+                logger.info(f"Processing batch {current_batch}/{total_batches}")
+                logger.info(f"Batch {current_batch} size: {len(batch)} wallets")
                 
-        return whale_holdings
+                tasks = []
+                for holder in batch:
+                    task = self.get_wallet_balance(holder, api_key)
+                    tasks.append(task)
+                    
+                balances = await asyncio.gather(*tasks)
+                
+                batch_wealthy_count = 0
+                batch_total_balance = 0
+                batch_results = []
+                
+                for holder, balance in zip(batch, balances):
+                    batch_total_balance += balance
+                    if balance >= 5000:
+                        wealthy_holders.append(holder)
+                        batch_wealthy_count += 1
+                        batch_results.append(f"{holder[:8]}... (${balance:.2f})")
+                
+                logger.info(f"Batch {current_batch} stats:")
+                logger.info(f"- Total balance: ${batch_total_balance:.2f}")
+                logger.info(f"- Average balance: ${batch_total_balance/len(batch):.2f}")
+                logger.info(f"- Wealthy holders found: {batch_wealthy_count}")
+                if batch_results:
+                    logger.info(f"- Wealthy holders: {batch_results}")
+                
+                await asyncio.sleep(0.1)  # Rate limiting
+        
+        logger.info(f"Batch processing complete:")
+        logger.info(f"- Total holders processed: {len(holders_list)}")
+        logger.info(f"- Total wealthy holders found: {len(wealthy_holders)}")
+        
+        return wealthy_holders
 
+token_mint_address = "ExZS1zbG7qopJvA87efQDysHrnJxyjzt8FgVyiLijZwM"
 
+HELIUS_API_KEY="29291e23-0902-4433-a6a7-2f3e32495ee7" 
+tracker = WhaleTracker(token_mint_address, HELIUS_API_KEY)
+
+async def main():
+    token_mint_address = "ExZS1zbG7qopJvA87efQDysHrnJxyjzt8FgVyiLijZwM"
+    api_key = "29291e23-0902-4433-a6a7-2f3e32495ee7"  # Replace with your API key
+    
+    logger.info("Starting token holder analysis...")
+    holders = await tracker.get_token_holders(token_mint_address, api_key)
+    
+    if holders:
+        wealthy_holders = await tracker.process_holders_in_batches(holders, api_key)
+        logger.info(f"Analysis complete. Found {len(wealthy_holders)} wealthy holders")
+        logger.info(f"Summary of wealthy holders: {[h[:8]+'...' for h in wealthy_holders]}")
+        
+        # Prepare data to save
+        from datetime import datetime
+        data = {
+            "timestamp": datetime.now().isoformat(),
+            "token_mint": token_mint_address,
+            "total_holders": len(holders),
+            "wealthy_holders": wealthy_holders,
+            "wealthy_holders_count": len(wealthy_holders)
+        }
+        
+        # Generate filename with current datetime
+        filename = f"data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+        filepath = "/Users/masterpo/Desktop/TheThinker/backend/data/whales/" + filename
+        
+        # Save to JSON file using aiofiles
+       
+        async with aiofiles.open(filepath, 'w') as f:
+            await f.write(json.dumps(data, indent=4))
+        logger.info(f"Data saved to {filepath}")
+    else:
+        logger.error("No holders found to analyze")
+
+if __name__ == "__main__":
+    asyncio.run(main())

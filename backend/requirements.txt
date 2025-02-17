@@ -9,3 +9,5 @@ solana
 websockets
 aiofiles
 dotenv
+solders
+watchdog

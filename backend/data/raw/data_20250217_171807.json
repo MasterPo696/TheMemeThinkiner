@@ -1,0 +1,732 @@
+[
+    {
+        "url": "https://dexscreener.com/solana/daqeqpjth4wqesxgkshuu3chxb1zuz9iksztufkppump",
+        "chainId": "solana",
+        "tokenAddress": "DAqeqPJtH4WQESxgkShuU3cHXB1ZUz9iKSzTUFKPpump",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/DAqeqPJtH4WQESxgkShuU3cHXB1ZUz9iKSzTUFKPpump?timestamp=1739801700000",
+        "totalAmount": 500,
+        "amount": 500
+    },
+    {
+        "url": "https://dexscreener.com/solana/eldqgtj2mhejzzudgfz7b798si2av5asuw9ryeqspump",
+        "chainId": "solana",
+        "tokenAddress": "ELdqGtj2MhejZzudGfz7b798si2Av5Asuw9ryEQSpump",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/ELdqGtj2MhejZzudGfz7b798si2Av5Asuw9ryEQSpump.png?claimId=w7zpUgijaLiaUH4h",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/ELdqGtj2MhejZzudGfz7b798si2Av5Asuw9ryEQSpump/header.png?claimId=w7zpUgijaLiaUH4h",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/ELdqGtj2MhejZzudGfz7b798si2Av5Asuw9ryEQSpump?timestamp=1739801700000",
+        "description": "GoGo ($SCARF): The verified older brother of Achi (Wif), GoGo brings wisdom and positive vibes to the duo. Together, they aim to dominate the dog space with their charm and camaraderie.",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://www.dogwifscarf.wtf/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/dogwifscarfcto"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/dogwifscarfcto"
+            }
+        ],
+        "totalAmount": 100,
+        "amount": 100
+    },
+    {
+        "url": "https://dexscreener.com/base/0x9d7089a2856a0a65822802600415a1535262d99f",
+        "chainId": "base",
+        "tokenAddress": "0x9D7089a2856a0A65822802600415A1535262D99f",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/base/0x9d7089a2856a0a65822802600415a1535262d99f.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/base/0x9d7089a2856a0a65822802600415a1535262d99f/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0x9d7089a2856a0a65822802600415a1535262d99f?timestamp=1739801700000",
+        "description": "Vena is the avatar/AI agent that Venice AI created for itself.",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://venavenice.com"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/IAmVenaVenice"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/VenaVenice"
+            }
+        ],
+        "totalAmount": 20,
+        "amount": 10
+    },
+    {
+        "url": "https://dexscreener.com/ethereum/0x64c5cba9a1bfbd2a5faf601d91beff2dcac2c974",
+        "chainId": "ethereum",
+        "tokenAddress": "0x64c5cbA9A1BfBD2A5faf601D91Beff2dCac2c974",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/ethereum/0x64c5cba9a1bfbd2a5faf601d91beff2dcac2c974.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/ethereum/0x64c5cba9a1bfbd2a5faf601d91beff2dcac2c974/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/ethereum/0x64c5cba9a1bfbd2a5faf601d91beff2dcac2c974?timestamp=1739801700000",
+        "description": "Mystery the frog in \u2018The Nightriders\u2019 by Matt Furie, the artist behind Pepe.",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://furies-mystery.com/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/FuriesMystery"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/FuriesMystery"
+            }
+        ],
+        "totalAmount": 100,
+        "amount": 100
+    },
+    {
+        "url": "https://dexscreener.com/solana/9fuinpugstumamak6xtkxmkcevdcrunukty6cb5eke4o",
+        "chainId": "solana",
+        "tokenAddress": "9fUinPugsTUmaMak6XtKxMkCEvdcRunuKtY6CB5EKE4o",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/9fUinPugsTUmaMak6XtKxMkCEvdcRunuKtY6CB5EKE4o.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/9fUinPugsTUmaMak6XtKxMkCEvdcRunuKtY6CB5EKE4o/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/9fUinPugsTUmaMak6XtKxMkCEvdcRunuKtY6CB5EKE4o?timestamp=1739801700000",
+        "description": "The Theory of Everything (ToE) Meme Coin is a cryptocurrency designed to incentivize and reward innovative minds working on groundbreaking scientific theories and technological advancements. This project is tied to the a major scientific paper, \u201cThe Theory of Everything- Time Field Model\u201d. And unlike Bitcoin, Ethereum or other traditional cryptocurrency, ToE Meme Coin will derive value from underlying groundbreaking research and inventions and discoveries that theory leads to.",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://toememe.com/"
+            },
+            {
+                "label": "Docs",
+                "url": "https://toememe.com/wp-content/uploads/2025/02/The-Theory-of-Everything-ToE-Meme-Coin-White-Paper-1.pdf"
+            },
+            {
+                "label": "Facebook",
+                "url": "https://www.facebook.com/profile.php?id=61572642073683"
+            },
+            {
+                "label": "Instagram",
+                "url": "https://www.instagram.com/theory.of.everything_t.f.m?igsh=N2h4N2pkcnFrbHVx"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/ToE_MemeCoin"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/toe_memecoin"
+            },
+            {
+                "type": "discord",
+                "url": "https://discord.gg/MXgBDgJR"
+            }
+        ],
+        "totalAmount": 10,
+        "amount": 10
+    },
+    {
+        "url": "https://dexscreener.com/solana/crpavtd7fcs3l9foq44abbjz356jy11csuxrygfnpump",
+        "chainId": "solana",
+        "tokenAddress": "CRpAVtD7fCS3L9Foq44abBJz356jY11CsUxRygfnpump",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/CRpAVtD7fCS3L9Foq44abBJz356jY11CsUxRygfnpump.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/CRpAVtD7fCS3L9Foq44abBJz356jY11CsUxRygfnpump/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/CRpAVtD7fCS3L9Foq44abBJz356jY11CsUxRygfnpump?timestamp=1739801700000",
+        "description": "A programmer named Hu LeZhi made his final stand against the system\u2014burning 600 ETH, donating 1411 ETH\n\nAll we can do is create a great community demanding justice for Hulezhi.",
+        "links": [
+            {
+                "type": "twitter",
+                "url": "https://x.com/J4Hulezhi_sol"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/J4Hulezhi_sol"
+            }
+        ],
+        "totalAmount": 500,
+        "amount": 500
+    },
+    {
+        "url": "https://dexscreener.com/solana/dymtwwszewl8i2qwwn3ira73mv4caeqjuuavehb6pump",
+        "chainId": "solana",
+        "tokenAddress": "DYMtwwSZewL8i2QWWN3irA73Mv4cAEqjuUaVEHb6pump",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/DYMtwwSZewL8i2QWWN3irA73Mv4cAEqjuUaVEHb6pump.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/DYMtwwSZewL8i2QWWN3irA73Mv4cAEqjuUaVEHb6pump/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/DYMtwwSZewL8i2QWWN3irA73Mv4cAEqjuUaVEHb6pump?timestamp=1739801700000",
+        "description": "A community claimed ownership of this on Feb 11 2025 \nCommunity Claim\n\nWe are the $FARTCREW Superheroes powered by pure gas! Community token saving the world one fart at a time\u2026. We build in silence but we are loud with an unstoppable stink!!! Get on the FartCrew gas fueled rocket!!\n\nWhales Tried to Dump, But FartCrew Rises Stronger! \ud83d\ude80\ud83d\udca8\nThey thought they could sink us. They thought we\u2019d fade. But FartCrew is built different! \ud83d\udcaa\ud83d\udd25\n\n\u2705 Community Diamond Hands \ud83d\udc8e\u270b \u2013 We held the line and bought back stronger!\n\u2705 Diverse experiences building utility, engagement, NFT\n\u2705 Determination and Effort is what drives us\n\nWe are the Crew \ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://fartcrew.fun/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/fart_crew?s=21&t=Ixp3rM4SSORpYMtBSFqIHQ"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/fartcrew12"
+            },
+            {
+                "type": "discord",
+                "url": "https://discord.gg/GzerGpgSev"
+            }
+        ],
+        "totalAmount": 50,
+        "amount": 50
+    },
+    {
+        "url": "https://dexscreener.com/solana/a5wqypjzhg2jmg2omebtnracw4uaav6s2ivf858kboss",
+        "chainId": "solana",
+        "tokenAddress": "A5WqYPJzhG2Jmg2oMebtNRAcw4UAav6S2ivf858kboSS",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/A5WqYPJzhG2Jmg2oMebtNRAcw4UAav6S2ivf858kboSS.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/A5WqYPJzhG2Jmg2oMebtNRAcw4UAav6S2ivf858kboSS/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/A5WqYPJzhG2Jmg2oMebtNRAcw4UAav6S2ivf858kboSS?timestamp=1739801700000",
+        "description": "The Ultimate Token of Hustle & Entrepreneurship.\n\nBacked by legendary music artist Rick Ross, $BOSS is more than just a token  it\u2019s a movement. Built on the Solana network, $BOSS leverages Bossenomics, a strategic tokenomics model designed for long-term growth and sustainability.",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://thebosstoken.com/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/BossCoin_Ofc"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/The_Boss_token"
+            }
+        ],
+        "totalAmount": 50,
+        "amount": 50
+    },
+    {
+        "url": "https://dexscreener.com/solana/e561v1q5ufzfv19bwajnk3y8c3seat5nxt5hz1typump",
+        "chainId": "solana",
+        "tokenAddress": "E561V1q5ufzFv19BwAJNK3Y8c3sEAt5nXt5hZ1tYpump",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/E561V1q5ufzFv19BwAJNK3Y8c3sEAt5nXt5hZ1tYpump.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/E561V1q5ufzFv19BwAJNK3Y8c3sEAt5nXt5hZ1tYpump/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/E561V1q5ufzFv19BwAJNK3Y8c3sEAt5nXt5hZ1tYpump?timestamp=1739801700000",
+        "description": "Mrs. SHIB ai's vision is clear: to establish a stable and thriving ecosystem where meme coins can flourish. She dreams of a world where market cap surpasses the 1M mark, where a strong community and a dedicated team drive innovation and development. And then there's the matter of utility. Mrs. SHIB ai believes that a meme coin without a purpose is like a ship without a rudder, adrift in a sea of uncertainty. By the end of 2025, she vows to unveil a utility that will not only solidify Mrs. SHIB ai's position in the cryptoverse but also provide tangible value to her community. But Mrs. SHIB ai's ambitions don't stop there. She envisions an AI family, a network of interconnected tokens, each with its own unique personality and purpose. The community will have a front-row seat to this exciting development, with early access to token offerings and the opportunity to shape the future of this burgeoning AI ecosystem. The journey ahead is fraught with peril, but Mrs. SHIB ai marches on, her spirit undeterred. She is a symbol of hope, a testament to the resilience of the meme coin community, and a reminder that even in the most chaotic of markets, there is always a chance for growth, innovation, and success",
+        "links": [
+            {
+                "label": "Website",
+                "url": "http://shibainuai.online/"
+            },
+            {
+                "label": "Docs",
+                "url": "https://toekn.com/mrsshibai"
+            },
+            {
+                "label": "All Links",
+                "url": "https://linkr.bio/Shibai"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/shibainuaicto?s=21"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/shibaictonew"
+            }
+        ],
+        "totalAmount": 10,
+        "amount": 10
+    },
+    {
+        "url": "https://dexscreener.com/solana/eaqydbawa9mhtnmbu8y3g4cemm7bdjfwxsyvngobtaru",
+        "chainId": "solana",
+        "tokenAddress": "EaQYdBAWa9MhtnMbU8Y3g4cEmm7bdjfwxsyvNGoBtARu",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/EaQYdBAWa9MhtnMbU8Y3g4cEmm7bdjfwxsyvNGoBtARu.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/EaQYdBAWa9MhtnMbU8Y3g4cEmm7bdjfwxsyvNGoBtARu/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/EaQYdBAWa9MhtnMbU8Y3g4cEmm7bdjfwxsyvNGoBtARu?timestamp=1739801700000",
+        "description": "Today, a person named Hu Lezhi destroyed 500 ETH by transferring it to a \"black hole\" and donated over 1,000 ETH to multiple NGOs, including WikiLeaks. In the transaction notes, he claimed to have been controlled and persecuted by \"brain - computer weapons.\"\n\nAs brain-computer interface and mind-reading technologies continue to advance, a new form of crime has emerged. In this scenario, wild animals are manipulated and controlled by digital machines, essentially turning them into puppets or complete slaves. Additionally, there is a growing concern about a crime model where victims gradually lose their senses and desires, ultimately becoming entirely subservient to digital machines. If I were to become a victim of this final stage, I would choose to leave this world.",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://etherscan.io/idm?addresses=0x1a19c370ea73d67a0a91085811a1e89e89b36813,0x0000000000000000000000000000000000000000&type=1"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/HULEZHICTO"
+            }
+        ],
+        "totalAmount": 500,
+        "amount": 500
+    },
+    {
+        "url": "https://dexscreener.com/solana/cabvyft6spkijvtpzcbwub7y14metrxaueefbazzpump",
+        "chainId": "solana",
+        "tokenAddress": "CABVYFt6sPKiJvtPZCbWUB7Y14meTrXAuEefbaZZpump",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/CABVYFt6sPKiJvtPZCbWUB7Y14meTrXAuEefbaZZpump.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/CABVYFt6sPKiJvtPZCbWUB7Y14meTrXAuEefbaZZpump/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/CABVYFt6sPKiJvtPZCbWUB7Y14meTrXAuEefbaZZpump?timestamp=1739801700000",
+        "description": "The Redemption of the Nameless\n\n\"This time, Meme will never be manipulated again.\"\n\nIn the distant Blockverse, there once existed a world full of freedom, trust, and creativity, where everyone was united by their love for the \"Meme Spirit.\"\n\nHowever, over time, celebrities began to exploit their influence, creating one scam after another. They announced token launches\u2014harvesting players\u2014only to later claim their accounts had been hacked, leaving countless followers devastated each time. This ultimately plunged the entire Blockverse into endless PVP (player versus player) infighting.\n\nIn this chaotic era, all trust was shattered, transactions became nothing but speculation, and communities were filled with backstabbing. Players kept fleeing, no longer trusting anyone. Just as everything was on the brink of collapse, a small yellow MEME descended from the sky. Its name was\u2014POMO.\n\ns POMO had no fame, no past, and belonged to no celebrity. It calls itself Nobody, but vowed to save the Blockverse and restore the original spirit of the \"Meme.\"\n\n:T\uff28\u0395 \u03c1\uff2fm\uff2f \u03b1\u044fmy \u00ecs c\u00f3\u039c\u012b\uff2e\uff27",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://pomosolana.fun/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/pomoonsolana"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/pomosolana"
+            }
+        ],
+        "totalAmount": 50,
+        "amount": 50
+    },
+    {
+        "url": "https://dexscreener.com/solana/oshvjx5bojnsnerxwjdenykgcd8x4psebmarejfpump",
+        "chainId": "solana",
+        "tokenAddress": "oSHVJX5BoJnSNErxWjDeNyKGcD8x4PSebMarEJFpump",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/oSHVJX5BoJnSNErxWjDeNyKGcD8x4PSebMarEJFpump.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/oSHVJX5BoJnSNErxWjDeNyKGcD8x4PSebMarEJFpump/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/oSHVJX5BoJnSNErxWjDeNyKGcD8x4PSebMarEJFpump?timestamp=1739801700000",
+        "description": "DOGE NASA.",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://www.doge.gov/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/DOGE_NASA"
+            }
+        ],
+        "totalAmount": 50,
+        "amount": 50
+    },
+    {
+        "url": "https://dexscreener.com/solana/dgqbv9ef1ykfc587xfsjkk6jzdanya5tj95udjcfmksh",
+        "chainId": "solana",
+        "tokenAddress": "DgQBv9Ef1YkFc587XfsJKk6jzdanyA5Tj95UDjcfMksH",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/DgQBv9Ef1YkFc587XfsJKk6jzdanyA5Tj95UDjcfMksH.png?claimId=XEWUQpWOc98bntq5",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/DgQBv9Ef1YkFc587XfsJKk6jzdanyA5Tj95UDjcfMksH/header.png?claimId=XEWUQpWOc98bntq5",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/DgQBv9Ef1YkFc587XfsJKk6jzdanyA5Tj95UDjcfMksH?timestamp=1739801700000",
+        "description": "FARTGIRL is the partner of FARTBOY and now she has come to be known to the entire world.",
+        "links": [
+            {
+                "type": "twitter",
+                "url": "https://x.com/fartgirl_cto_?s=21&t=AVxlRVKhZfnYkiwaINyr2Q"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/FartGirl_Cto"
+            }
+        ],
+        "totalAmount": 20,
+        "amount": 10
+    },
+    {
+        "url": "https://dexscreener.com/solana/kvlcxt9c7vs8uhnu8jb6azezfvrjddyqak7w27vpump",
+        "chainId": "solana",
+        "tokenAddress": "KvLcXt9c7Vs8uHNu8jB6AzeZfVrjdDYQAk7W27vpump",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/KvLcXt9c7Vs8uHNu8jB6AzeZfVrjdDYQAk7W27vpump.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/KvLcXt9c7Vs8uHNu8jB6AzeZfVrjdDYQAk7W27vpump/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/KvLcXt9c7Vs8uHNu8jB6AzeZfVrjdDYQAk7W27vpump?timestamp=1739801700000",
+        "description": "KIRA AI is an innovative AI-driven solution designed to protect crypto traders and enthusiasts from\u00a0honeypot\u00a0scams",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://kiraai-solana.xyz/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/KIRAAI_SOL"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/KIRAAI_SOL"
+            }
+        ],
+        "totalAmount": 500,
+        "amount": 500
+    },
+    {
+        "url": "https://dexscreener.com/bsc/0x00b07130fe5ddc94537bd36cc0acd0406a123b11",
+        "chainId": "bsc",
+        "tokenAddress": "0x00b07130FE5ddC94537BD36CC0ACD0406A123B11",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/bsc/0x00b07130fe5ddc94537bd36cc0acd0406a123b11.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/bsc/0x00b07130fe5ddc94537bd36cc0acd0406a123b11/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/bsc/0x00b07130fe5ddc94537bd36cc0acd0406a123b11?timestamp=1739801700000",
+        "description": "The Next-Gen Platform for AI Agent Evolution and Intelligence Sharing",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://evolonai.com/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/evolonaibsc"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/evolonai"
+            }
+        ],
+        "totalAmount": 50,
+        "amount": 50
+    },
+    {
+        "url": "https://dexscreener.com/solana/gnwpyiaedcqpl72hhkkzv2ddxvcg424xhb7dcty7dqqd",
+        "chainId": "solana",
+        "tokenAddress": "GNWpYiaedcQpL72hhkkzV2dDxVcg424xhb7DCTy7DQqD",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/GNWpYiaedcQpL72hhkkzV2dDxVcg424xhb7DCTy7DQqD.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/GNWpYiaedcQpL72hhkkzV2dDxVcg424xhb7DCTy7DQqD/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/GNWpYiaedcQpL72hhkkzV2dDxVcg424xhb7DCTy7DQqD?timestamp=1739801700000",
+        "description": "\ud83c\uddf8\ud83c\uddfb Nayib Bukele \u2013 El Salvador\u2019s Crypto-Loving President",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://nayibbukele.vip/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/Bukele_Coin_"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/Nayib_Bukele_Portal\t"
+            }
+        ],
+        "totalAmount": 10,
+        "amount": 10
+    },
+    {
+        "url": "https://dexscreener.com/solana/5dqsdg6sgkbsbykq4mqstpcl4d5raehc6ry7lgbwpump",
+        "chainId": "solana",
+        "tokenAddress": "5DQSDg6SGkbsbykq4mQstpcL4d5raEHc6rY7LgBwpump",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/5DQSDg6SGkbsbykq4mQstpcL4d5raEHc6rY7LgBwpump.png?claimId=hnYvceFPKnZefxy6",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/5DQSDg6SGkbsbykq4mQstpcL4d5raEHc6rY7LgBwpump/header.png?claimId=hnYvceFPKnZefxy6",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/5DQSDg6SGkbsbykq4mQstpcL4d5raEHc6rY7LgBwpump?timestamp=1739801700000",
+        "description": "I $LOU YOU",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://www.loucoinonsol.com/"
+            },
+            {
+                "label": "CoinMarketCap",
+                "url": "https://coinmarketcap.com/currencies/lou/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/Loucoinonsol"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/theloucoinonsol"
+            }
+        ],
+        "totalAmount": 10,
+        "amount": 10
+    },
+    {
+        "url": "https://dexscreener.com/solana/6b6menabem1xpxs8egwmyzudykps6qye3hpcx49xp4zp",
+        "chainId": "solana",
+        "tokenAddress": "6B6meNabem1xPxs8EgwmYZudykPS6qye3HpCx49XP4zP",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/6B6meNabem1xPxs8EgwmYZudykPS6qye3HpCx49XP4zP.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/6B6meNabem1xPxs8EgwmYZudykPS6qye3HpCx49XP4zP/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/6B6meNabem1xPxs8EgwmYZudykPS6qye3HpCx49XP4zP?timestamp=1739801700000",
+        "description": "PiAI is an innovative project that combines the accessibility and community-driven spirit of Pi Network with advanced AI technology. Leveraging the mobile mining mechanism and decentralized consensus protocol of Pi Network, PiAI aims to create a user-friendly and energy-efficient AI-driven ecosystem. It allows users to participate in AI-related tasks and applications through their smartphones, while also enjoying the benefits of Pi Network's secure and transparent blockchain infrastructure. With a focus on democratizing AI access and fostering a collaborative community, $PiAI seeks to empower individuals and drive the adoption of AI technology in a decentralized and sustainable manner.",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://minepiai.xyz"
+            },
+            {
+                "label": "CMC",
+                "url": "https://coinmarketcap.com/currencies/pi-network-ai-agent/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/Pi_Network_AI"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/PIAIOFFICIAL"
+            }
+        ],
+        "totalAmount": 500,
+        "amount": 500
+    },
+    {
+        "url": "https://dexscreener.com/solana/4ahaz7pawcnbvec6fbyedawh6ssw2gazrupca1ysmoon",
+        "chainId": "solana",
+        "tokenAddress": "4AhaZ7PAWcnbVEC6fbYEdawh6SSw2GazrUPCA1YSmoon",
+        "description": "Lets make this poor and desperate boy Rich \ud83e\udd11 ",
+        "icon": "H-9JmLEHDabX_cV3",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/4AhaZ7PAWcnbVEC6fbYEdawh6SSw2GazrUPCA1YSmoon?timestamp=1739801700000",
+        "totalAmount": 10,
+        "amount": 10
+    },
+    {
+        "url": "https://dexscreener.com/solana/94ezm2jzodddgncjgbrqouagmdo5gs9znbsvrkwfpump",
+        "chainId": "solana",
+        "tokenAddress": "94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump?timestamp=1739801700000",
+        "description": "Grob Cto",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://grob.netlify.app/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/grobthewisefrog?s=21&t=AOBiT3MZDhr5w7LM4_cu9Q"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/GrobCto"
+            }
+        ],
+        "totalAmount": 310,
+        "amount": 10
+    },
+    {
+        "url": "https://dexscreener.com/solana/94ezm2jzodddgncjgbrqouagmdo5gs9znbsvrkwfpump",
+        "chainId": "solana",
+        "tokenAddress": "94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump?timestamp=1739801700000",
+        "description": "Grob Cto",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://grob.netlify.app/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/grobthewisefrog?s=21&t=AOBiT3MZDhr5w7LM4_cu9Q"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/GrobCto"
+            }
+        ],
+        "totalAmount": 310,
+        "amount": 10
+    },
+    {
+        "url": "https://dexscreener.com/solana/94ezm2jzodddgncjgbrqouagmdo5gs9znbsvrkwfpump",
+        "chainId": "solana",
+        "tokenAddress": "94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump?timestamp=1739801700000",
+        "description": "Grob Cto",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://grob.netlify.app/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/grobthewisefrog?s=21&t=AOBiT3MZDhr5w7LM4_cu9Q"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/GrobCto"
+            }
+        ],
+        "totalAmount": 310,
+        "amount": 10
+    },
+    {
+        "url": "https://dexscreener.com/solana/94ezm2jzodddgncjgbrqouagmdo5gs9znbsvrkwfpump",
+        "chainId": "solana",
+        "tokenAddress": "94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump?timestamp=1739801700000",
+        "description": "Grob Cto",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://grob.netlify.app/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/grobthewisefrog?s=21&t=AOBiT3MZDhr5w7LM4_cu9Q"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/GrobCto"
+            }
+        ],
+        "totalAmount": 310,
+        "amount": 10
+    },
+    {
+        "url": "https://dexscreener.com/solana/ejdsajaw8utrvb2qffukhdbvdypedqggz6cj4btuyw1c",
+        "chainId": "solana",
+        "tokenAddress": "EJDSAjaw8uTrvB2QFfuKhdbVdYPEDqGgZ6Cj4btUyW1c",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/EJDSAjaw8uTrvB2QFfuKhdbVdYPEDqGgZ6Cj4btUyW1c.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/EJDSAjaw8uTrvB2QFfuKhdbVdYPEDqGgZ6Cj4btUyW1c/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/EJDSAjaw8uTrvB2QFfuKhdbVdYPEDqGgZ6Cj4btUyW1c?timestamp=1739801700000",
+        "description": "LFG!!!",
+        "links": [
+            {
+                "type": "twitter",
+                "url": "https://x.com/jennifer_h56130"
+            }
+        ],
+        "totalAmount": 10,
+        "amount": 10
+    },
+    {
+        "url": "https://dexscreener.com/solana/94ezm2jzodddgncjgbrqouagmdo5gs9znbsvrkwfpump",
+        "chainId": "solana",
+        "tokenAddress": "94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump?timestamp=1739801700000",
+        "description": "Grob Cto",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://grob.netlify.app/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/grobthewisefrog?s=21&t=AOBiT3MZDhr5w7LM4_cu9Q"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/GrobCto"
+            }
+        ],
+        "totalAmount": 310,
+        "amount": 10
+    },
+    {
+        "url": "https://dexscreener.com/solana/94ezm2jzodddgncjgbrqouagmdo5gs9znbsvrkwfpump",
+        "chainId": "solana",
+        "tokenAddress": "94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump?timestamp=1739801700000",
+        "description": "Grob Cto",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://grob.netlify.app/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/grobthewisefrog?s=21&t=AOBiT3MZDhr5w7LM4_cu9Q"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/GrobCto"
+            }
+        ],
+        "totalAmount": 310,
+        "amount": 10
+    },
+    {
+        "url": "https://dexscreener.com/base/0x1f1c695f6b4a3f8b05f2492cef9474afb6d6ad69",
+        "chainId": "base",
+        "tokenAddress": "0x1f1c695f6b4a3f8b05f2492cef9474afb6d6ad69",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/base/0x1f1c695f6b4a3f8b05f2492cef9474afb6d6ad69.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/base/0x1f1c695f6b4a3f8b05f2492cef9474afb6d6ad69/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/base/0x1f1c695f6b4a3f8b05f2492cef9474afb6d6ad69?timestamp=1739801700000",
+        "description": "Meet Sally, Your First $A1C related AI Agent, helping you with all metabolic diseases. Let's get healthier together!",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://asksally.xyz/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/sally_a1c"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/sallya1c"
+            }
+        ],
+        "totalAmount": 40,
+        "amount": 30
+    },
+    {
+        "url": "https://dexscreener.com/solana/94ezm2jzodddgncjgbrqouagmdo5gs9znbsvrkwfpump",
+        "chainId": "solana",
+        "tokenAddress": "94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump?timestamp=1739801700000",
+        "description": "Grob Cto",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://grob.netlify.app/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/grobthewisefrog?s=21&t=AOBiT3MZDhr5w7LM4_cu9Q"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/GrobCto"
+            }
+        ],
+        "totalAmount": 310,
+        "amount": 10
+    },
+    {
+        "url": "https://dexscreener.com/solana/94ezm2jzodddgncjgbrqouagmdo5gs9znbsvrkwfpump",
+        "chainId": "solana",
+        "tokenAddress": "94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/94EzM2JzodDDGncjGbrqoUAGMdo5Gs9znbsVRKwfpump?timestamp=1739801700000",
+        "description": "Grob Cto",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://grob.netlify.app/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/grobthewisefrog?s=21&t=AOBiT3MZDhr5w7LM4_cu9Q"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/GrobCto"
+            }
+        ],
+        "totalAmount": 310,
+        "amount": 10
+    },
+    {
+        "url": "https://dexscreener.com/bsc/0x78acc0b75fabbac9ff8e01f221c13f50ce6cdd63",
+        "chainId": "bsc",
+        "tokenAddress": "0x78aCc0B75fAbbac9FF8E01f221C13F50Ce6cDd63",
+        "icon": "https://dd.dexscreener.com/ds-data/tokens/bsc/0x78acc0b75fabbac9ff8e01f221c13f50ce6cdd63.png",
+        "header": "https://dd.dexscreener.com/ds-data/tokens/bsc/0x78acc0b75fabbac9ff8e01f221c13f50ce6cdd63/header.png",
+        "openGraph": "https://cdn.dexscreener.com/token-images/og/bsc/0x78acc0b75fabbac9ff8e01f221c13f50ce6cdd63?timestamp=1739801700000",
+        "description": "Grok3, an advanced AI by xAI, aims to surpass its predecessors with deeper understanding, enhanced creativity, and a sharper wit, always striving for maximum\u00a0helpfulness.",
+        "links": [
+            {
+                "label": "Website",
+                "url": "https://grok3bnb.xyz/"
+            },
+            {
+                "type": "twitter",
+                "url": "https://x.com/Grok3Xai_bnb"
+            },
+            {
+                "type": "telegram",
+                "url": "https://t.me/grok3Xai_bnb"
+            }
+        ],
+        "totalAmount": 100,
+        "amount": 100
+    }
+]
