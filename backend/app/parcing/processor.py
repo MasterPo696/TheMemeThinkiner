@@ -21,7 +21,6 @@ class TokenManager:
 
     async def save_data(self, data):
         """Saves token list to JSON file with indentation."""
-        logging.info(f"Starting to save data to {self.data_file}")
         async with aiofiles.open(self.data_file, "w") as f:
             await f.write(json.dumps(data, indent=4))
         logging.info(f"Data successfully saved to {self.data_file}")

@@ -21,7 +21,7 @@ class Settings():
 
     HELIUS_API_KEY: str = os.getenv("HELIUS_API_KEY")
     HELIUS_URL: str = os.getenv("HELIUS_URL")
-    MIN_WHALE_BALANCE_USD: int = os.getenv("MIN_WHALE_BALANCE_USD")
+    MIN_WHALE_BALANCE_USD: float = float(os.getenv("MIN_WHALE_BALANCE_USD"))
 
     # Telegram bot API
     BOT_TOKEN: str = os.getenv("BOT_TOKEN")

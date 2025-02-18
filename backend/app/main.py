@@ -1,6 +1,8 @@
 import asyncio
 import logging
 from orchestrator import Orchestrator
+from utils.config import settings
+
 
 logging.basicConfig(
     level=logging.INFO,

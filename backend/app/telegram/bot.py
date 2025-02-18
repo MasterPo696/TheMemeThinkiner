@@ -11,7 +11,6 @@ from parcing.subscription import WhaleSubscription
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-print(settings.BOT_TOKEN)
 
 # Initialize bot and dispatcher
 bot = Bot(token=settings.BOT_TOKEN)

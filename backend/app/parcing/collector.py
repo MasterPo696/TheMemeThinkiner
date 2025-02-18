@@ -58,4 +58,4 @@ class DataCollector:
                     logging.info(f"Data successfully saved to {filename}")
                 
                 # Wait 60 seconds before next collection
-                await asyncio.sleep(60)
+                await asyncio.sleep(900)
