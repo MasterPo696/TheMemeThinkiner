@@ -38,7 +38,7 @@ A sophisticated platform for monitoring Solana tokens, tracking whale movements,
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/thethinker.git
+git clone https://github.com/MasterPo696/thethinker.git
 cd thethinker
 ```
 
@@ -77,6 +77,7 @@ backend/
 ├── data/               # Data storage
 │   ├── raw/           # Raw collected data
 │   ├── clean/         # Processed data
+│   └── pumped/        # Pumped tokens data
 │   └── whales/        # Whale tracking data
 └── docker/            # Docker configuration files
 ```
