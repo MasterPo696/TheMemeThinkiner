@@ -1,4 +1,4 @@
-```markdown
+
 # TheThinker - Solana Token Analytics Platform 🚀
 
 A sophisticated platform for monitoring Solana tokens, tracking whale movements, and analyzing market trends in real-time.
@@ -122,4 +122,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## ⚠️ Disclaimer
 
 This project is for educational and research purposes only. Always do your own research before making any investment decisions.
-```
